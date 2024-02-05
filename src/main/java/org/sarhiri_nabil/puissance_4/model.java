@@ -11,6 +11,7 @@ public class model {
     //Set the player as the player who start he game and initialize the grid by calling function initCases()
     public void setGame(){
         this.player=1;
+        this.endGame=false;
         initCases();
     }
 
@@ -43,6 +44,7 @@ public class model {
                 }
                 if (li==-1){
                     System.out.println("column full, choose another column");
+                    break;
                 }
                 else {
                     if (this.player==1){
